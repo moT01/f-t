@@ -7,6 +7,7 @@ config:
     setup:
       commands:
         - npm install
+        - mkdir helloworld
         - cd ../../../../etc/postgresql/12/main
         - chmod 644 postgresql.conf
         - echo "log_statement = 'all'" >> postgresql.conf
