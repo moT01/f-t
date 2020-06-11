@@ -12,7 +12,10 @@
       },
       "setup": {
         "commands": [
-          "npm install"
+          "npm install",
+          "cd ../../../etc/postgresql/12/main",
+          "chmod 644 postgresql.conf",
+          "echo \"log_statement = 'all'\" >> postgresql.conf"
         ],
         "commits": [
           "7d2ee004babaeefffbb8569e25803aca9fb477e4"

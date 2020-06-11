@@ -7,7 +7,7 @@ config:
     setup:
       commands:
         - npm install
-        - cd ../../../etc/postgresql/12/main
+        - cd ../../../../etc/postgresql/12/main
         - chmod 644 postgresql.conf
         - echo "log_statement = 'all'" >> postgresql.conf
     directory: coderoad
