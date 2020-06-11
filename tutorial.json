@@ -13,7 +13,7 @@
       "setup": {
         "commands": [
           "npm install",
-          "cd ../../../../etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf"
+          "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf"
         ],
         "commits": [
           "7d2ee004babaeefffbb8569e25803aca9fb477e4"

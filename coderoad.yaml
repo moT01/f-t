@@ -6,8 +6,10 @@ config:
       tap: --reporter=mocha-tap-reporter
     setup:
       commands:
+        # run npm install in coderoad folder on load to install testing dependecies
         - npm install
-        - cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo "log_statement = 'all'" >> postgresql.conf && echo "log_min_error_statement = INFO" >> postgresql.conf && echo "log_min_messages = INFO" >> postgresql.conf
+        # run the commands below to change persissions to required files in Strove as well as change log configurations
+        - cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo "log_statement = 'all'" >> postgresql.conf && echo "log_min_error_statement = INFO" >> postgresql.conf && echo "log_min_messages = INFO" >> postgresql.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log
     directory: coderoad
   repo: 
     uri: https://github.com/moT01/f-t
