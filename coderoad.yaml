@@ -25,3 +25,9 @@ levels:
       - id: L2S1
         setup:
           subtasks: false
+  - id: L2
+    steps:
+      - id: L2S1
+        setup:
+          files: 
+            - index.html
