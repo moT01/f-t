@@ -1,0 +1,27 @@
+version: '0.1.0'
+config:
+  testRunner:
+    command: ./node_modules/.bin/mocha
+    args:
+      tap: --reporter=mocha-tap-reporter
+    setup:
+      commands:
+        - npm install
+    directory: coderoad
+  repo: 
+    uri: https://github.com/moT01/f-t
+    branch: v0.1.0
+  dependencies:
+    - name: node
+      version: '>=10'
+levels:
+  - id: L1
+    steps:
+      - id: L1S1
+        setup:
+          subtasks: false
+  - id: L2
+    steps:
+      - id: L2S1
+        setup:
+          subtasks: false
