@@ -8,7 +8,7 @@ config:
       commands:
         - npm install
         - mkdir helloworld
-        - cd ../../../../etc/postgresql/12/main && chmod 644 postgresql.conf && echo "log_statement = 'all'" >> postgresql.conf
+        - cd ../../../../etc/postgresql/12/main && sudo chmod 644 postgresql.conf && echo "log_statement = 'all'" >> postgresql.conf
     directory: coderoad
   repo: 
     uri: https://github.com/moT01/f-t
