@@ -29,3 +29,9 @@ levels:
         setup:
           files: 
             - index.html
+  - id: L3
+    steps:
+      - id: L3S1
+        setup:
+          watchers:
+            - ../../../../var/log/postgresql/postgresql-12-main.log

@@ -30,3 +30,17 @@ Add the DOCTYPE
 #### HINTS
 
 * Add `<!DOCTYPE html>` at the top of `index.html` and save the file
+
+## L3 Add DOCTYPE
+
+> Add a DOCTYPE to an HTML file
+
+HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.
+
+### L3S1
+
+View dbs with \l
+
+#### HINTS
+
+* Add `<!DOCTYPE html>` at the top of `index.html` and save the file
