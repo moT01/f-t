@@ -61,29 +61,6 @@
         {
           "id": "L2S1",
           "setup": {
-            "subtasks": false,
-            "commits": [
-              "26852f7fa0b67fdf36a9a7ae35015fa1989810b1"
-            ]
-          },
-          "solution": {
-            "commits": [
-              "bac3a9c0a90792eeedfab38dbf13c59ae0f54a8a"
-            ]
-          },
-          "content": "Add the DOCTYPE"
-        }
-      ],
-      "title": "Add DOCTYPE",
-      "summary": "Add a DOCTYPE to an HTML file",
-      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`."
-    },
-    {
-      "id": "L2",
-      "steps": [
-        {
-          "id": "L2S1",
-          "setup": {
             "files": [
               "index.html"
             ],
