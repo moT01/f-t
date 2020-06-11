@@ -16,3 +16,17 @@ This is the test text. Create an `index.html` file to pass this lesson.
 
 * This is a hint to help people through the test
 * Second hint for L1S1, don't worry if the hints don't show up yet
+
+## L2 Add DOCTYPE
+
+> Add a DOCTYPE to an HTML file
+
+HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.
+
+### L2S1
+
+Add the DOCTYPE
+
+#### HINTS
+
+* Add `<!DOCTYPE html>` at the top of `index.html` and save the file

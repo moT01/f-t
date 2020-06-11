@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "summary": {
+    "title": "Introduction",
+    "description": "This is an introduction to your tutorial. It will show up on the first page when your tutorial is started."
+  },
+  "config": {
+    "testRunner": {
+      "command": "./node_modules/.bin/mocha",
+      "args": {
+        "tap": "--reporter=mocha-tap-reporter"
+      },
+      "setup": {
+        "commands": [
+          "npm install"
+        ],
+        "commits": [
+          "7d2ee004babaeefffbb8569e25803aca9fb477e4"
+        ]
+      },
+      "directory": "coderoad"
+    },
+    "repo": {
+      "uri": "https://github.com/moT01/f-t",
+      "branch": "v0.1.0"
+    },
+    "dependencies": [
+      {
+        "name": "node",
+        "version": ">=10"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "L1",
+      "steps": [
+        {
+          "id": "L1S1",
+          "setup": {
+            "subtasks": false,
+            "commits": [
+              "7d9b9316d2a6f5a5eedc894bfcb6fe3292038e53"
+            ]
+          },
+          "solution": {
+            "commits": [
+              "860be1bc049fcf25a842054ae5f35274f24b97b9"
+            ]
+          },
+          "content": "This is the test text. Create an `index.html` file to pass this lesson."
+        }
+      ],
+      "title": "Create index.html",
+      "summary": "Optional summary for L1",
+      "content": "Here's where you can put a description, examples, and instructions for the lesson."
+    }
+  ]
+}
