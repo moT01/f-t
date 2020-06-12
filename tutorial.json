@@ -16,7 +16,7 @@
           "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log"
         ],
         "commits": [
-          "7d2ee004babaeefffbb8569e25803aca9fb477e4"
+          "539feaaa89ca828189a96dde1b8dba14a33aa0ce"
         ]
       },
       "directory": "coderoad"
@@ -41,12 +41,12 @@
           "setup": {
             "subtasks": false,
             "commits": [
-              "7d9b9316d2a6f5a5eedc894bfcb6fe3292038e53"
+              "f19e46b39bde524c3c780a7e9f5590971f68d1df"
             ]
           },
           "solution": {
             "commits": [
-              "860be1bc049fcf25a842054ae5f35274f24b97b9"
+              "4fcd5f1c6a7b30b081388eb560bc99d499af2737"
             ]
           },
           "content": "This is the test text. Create an `index.html` file to pass this lesson."
@@ -66,15 +66,40 @@
               "index.html"
             ],
             "commits": [
-              "26852f7fa0b67fdf36a9a7ae35015fa1989810b1"
+              "753ead3ae03241ff304e135480da227d0aed5855"
             ]
           },
           "solution": {
             "commits": [
-              "bac3a9c0a90792eeedfab38dbf13c59ae0f54a8a"
+              "d5ff7de19b0ffc084dc4314a6a1e49c4db93b8e9"
             ]
           },
           "content": "Add the DOCTYPE"
+        }
+      ],
+      "title": "Add DOCTYPE",
+      "summary": "Add a DOCTYPE to an HTML file",
+      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`."
+    },
+    {
+      "id": "L3",
+      "steps": [
+        {
+          "id": "L3S1",
+          "setup": {
+            "watchers": [
+              "../../../../var/log/postgresql/postgresql-12-main.log"
+            ],
+            "commits": [
+              "41d7c82f9e4a8f17bebb6e984f5fea9176eff587"
+            ]
+          },
+          "solution": {
+            "commits": [
+              "e49bdc8517779877c021e66f54f76e4bd225f7eb"
+            ]
+          },
+          "content": "View dbs with \\l"
         }
       ],
       "title": "Add DOCTYPE",
