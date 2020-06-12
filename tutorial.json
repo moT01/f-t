@@ -13,8 +13,7 @@
       "setup": {
         "commands": [
           "npm install",
-          "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log",
-          "sudo service postgresql start && sudo -u postgres psql && \"ALTER ROLE postgres WITH PASSWORD 'password';\" && exit && sudo service postgres stop"
+          "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && sudo sed \"s/host    all             all             127.0.0.1\\/32            md5/host    all             all             127.0.0.1\\/32            trust/\" pg_hba.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log"
         ],
         "commits": [
           "539feaaa89ca828189a96dde1b8dba14a33aa0ce"
