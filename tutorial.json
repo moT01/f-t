@@ -13,10 +13,10 @@
       "setup": {
         "commands": [
           "npm install",
-          "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && sudo sed \"s/host    all             all             127.0.0.1\\/32            md5/host    all             all             127.0.0.1\\/32            trust/\" pg_hba.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log"
+          "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && sudo sed -i \"s/host    all             all             127.0.0.1\\/32            md5/host    all             all             127.0.0.1\\/32            trust/\" pg_hba.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log"
         ],
         "commits": [
-          "539feaaa89ca828189a96dde1b8dba14a33aa0ce"
+          "53bc0a39a0b2eb7ac98a763bd040b6fed8e815a3"
         ]
       },
       "directory": "coderoad"
@@ -34,77 +34,84 @@
   },
   "levels": [
     {
-      "id": "L1",
+      "id": "1",
+      "title": "Create index.html",
+      "summary": "Optional summary for L1",
+      "content": "Here's where you can put a description, examples, and instructions for the lesson.",
       "steps": [
         {
-          "id": "L1S1",
+          "id": "1.1",
           "setup": {
             "subtasks": false,
             "commits": [
-              "f19e46b39bde524c3c780a7e9f5590971f68d1df"
+              "a2770e46bee4543d568f3c633e4b25cc17e8053b"
             ]
           },
+          "content": "This is the test text. Create an `index.html` file to pass this lesson.",
+          "hints": [
+            "This is a hint to help people through the test",
+            "Second hint for L1S1, don't worry if the hints don't show up yet"
+          ],
           "solution": {
             "commits": [
-              "4fcd5f1c6a7b30b081388eb560bc99d499af2737"
+              "725fe5adb146470e6ade6fac834d7334687aca21"
             ]
-          },
-          "content": "This is the test text. Create an `index.html` file to pass this lesson."
+          }
         }
-      ],
-      "title": "Create index.html",
-      "summary": "Optional summary for L1",
-      "content": "Here's where you can put a description, examples, and instructions for the lesson."
+      ]
     },
     {
-      "id": "L2",
+      "id": "2",
+      "title": "Add DOCTYPE",
+      "summary": "Add a DOCTYPE to an HTML file",
+      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.",
       "steps": [
         {
-          "id": "L2S1",
+          "id": "2.1",
           "setup": {
             "files": [
               "index.html"
             ],
             "commits": [
-              "753ead3ae03241ff304e135480da227d0aed5855"
+              "b0c927aec13b5bdddb252fd20e8efda3b095ea2f"
             ]
           },
+          "content": "Add the DOCTYPE",
+          "hints": [
+            "Add `<!DOCTYPE html>` at the top of `index.html` and save the file"
+          ],
           "solution": {
             "commits": [
-              "d5ff7de19b0ffc084dc4314a6a1e49c4db93b8e9"
+              "9399bb41e962b42ccc1734723349be8f506109f9"
             ]
-          },
-          "content": "Add the DOCTYPE"
+          }
         }
-      ],
-      "title": "Add DOCTYPE",
-      "summary": "Add a DOCTYPE to an HTML file",
-      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`."
+      ]
     },
     {
-      "id": "L3",
+      "id": "3",
+      "title": "Add DOCTYPE",
+      "summary": "Add a DOCTYPE to an HTML file",
+      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.",
       "steps": [
         {
-          "id": "L3S1",
+          "id": "3.1",
           "setup": {
             "watchers": [
               "../../../../var/log/postgresql/postgresql-12-main.log"
             ],
             "commits": [
-              "41d7c82f9e4a8f17bebb6e984f5fea9176eff587"
+              "47c49c91bee3ef96ed9d0276567bff4320b8c022"
             ]
           },
+          "content": "View dbs with \\l",
           "solution": {
             "commits": [
-              "e49bdc8517779877c021e66f54f76e4bd225f7eb"
+              "aa24f9e2a6c66bdacce2ddea7733e4a8e7aa7f16"
             ]
-          },
-          "content": "View dbs with \\l"
+          }
         }
-      ],
-      "title": "Add DOCTYPE",
-      "summary": "Add a DOCTYPE to an HTML file",
-      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`."
+      ]
     }
   ]
 }

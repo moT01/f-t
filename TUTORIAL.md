@@ -31,7 +31,7 @@ Add the DOCTYPE
 
 * Add `<!DOCTYPE html>` at the top of `index.html` and save the file
 
-## 3 Add DOCTYPE
+## 3. Add DOCTYPE
 
 > Add a DOCTYPE to an HTML file
 
