@@ -44,3 +44,17 @@ View dbs with \l
 #### HINTS
 
 * Add `<!DOCTYPE html>` at the top of `index.html` and save the file
+
+## 4. md without yaml or commits
+
+> Add a DOCTYPE to an HTML file
+
+HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.
+
+### 4.1
+
+View dbs with \l
+
+#### HINTS
+
+* Add `<!DOCTYPE html>` at the top of `index.html` and save the file
