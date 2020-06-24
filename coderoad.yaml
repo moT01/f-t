@@ -35,9 +35,3 @@ levels:
         setup:
           watchers:
             - ../../../../var/log/postgresql/postgresql-12-main.log
-  - id: '4'
-    steps:
-      - id: '4.1'
-        setup:
-          watchers:
-            - ../../../../var/log/postgresql/postgresql-12-main.log
