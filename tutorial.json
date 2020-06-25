@@ -16,7 +16,7 @@
           "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && sudo sed -i \"s/host    all             all             127.0.0.1\\/32            md5/host    all             all             127.0.0.1\\/32            trust/\" pg_hba.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log"
         ],
         "commits": [
-          "dc5ad96aea3c388c6f82f98f15ecf4e6551836c6"
+          "367b35c01135883e285e0f80d62779a5015b02d6"
         ]
       },
       "directory": "coderoad"
@@ -34,61 +34,109 @@
   },
   "levels": [
     {
-      "id": "1",
+      "id": "10",
       "title": "Create index.html",
       "summary": "Optional summary for L1",
       "content": "Here's where you can put a description, examples, and instructions for the lesson.",
       "steps": [
         {
-          "id": "1.1",
+          "id": "10.1",
           "setup": {
             "subtasks": false,
-            "commits": []
+            "commits": [
+              "ca479cabc540f5d6e85734ce9e092b6bfde1a186"
+            ]
           },
           "content": "This is the test text. Create an `index.html` file to pass this lesson.",
           "hints": [
             "This is a hint to help people through the test",
             "Second hint for L1S1, don't worry if the hints don't show up yet"
-          ]
+          ],
+          "solution": {
+            "commits": [
+              "bade1d0c35234478046fc5a41cefc2d5d0ce787b"
+            ]
+          }
         }
       ]
     },
     {
-      "id": "2",
+      "id": "15",
+      "title": "Create index.html",
+      "summary": "test level in the middle",
+      "content": "test level in the middle",
+      "steps": [
+        {
+          "id": "15.1",
+          "setup": {
+            "subtasks": false,
+            "commits": [
+              "8463cf14a3de628289383c15fefbb15c2deb8863"
+            ]
+          },
+          "content": "This is the test text. Create an `index.js` file to pass this lesson.",
+          "hints": [
+            "This is a hint to help people through the test",
+            "Second hint for L1S1, don't worry if the hints don't show up yet"
+          ],
+          "solution": {
+            "commits": [
+              "9c61f656f158ebe017d65129349ff5f273766c91"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "20",
       "title": "Add DOCTYPE",
       "summary": "Add a DOCTYPE to an HTML file",
       "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.",
       "steps": [
         {
-          "id": "2.1",
+          "id": "20.1",
           "setup": {
             "files": [
               "index.html"
             ],
-            "commits": []
+            "commits": [
+              "138d506d8338737d0fac2bf218997fef7c01af0a"
+            ]
           },
           "content": "Add the DOCTYPE",
           "hints": [
             "Add `<!DOCTYPE html>` at the top of `index.html` and save the file"
-          ]
+          ],
+          "solution": {
+            "commits": [
+              "aeced5fe2c7d7cb56d02d48eaab94b023ee231cd"
+            ]
+          }
         }
       ]
     },
     {
-      "id": "3",
+      "id": "30",
       "title": "Add DOCTYPE",
       "summary": "Add a DOCTYPE to an HTML file",
       "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.",
       "steps": [
         {
-          "id": "3.1",
+          "id": "30.1",
           "setup": {
             "watchers": [
               "../../../../var/log/postgresql/postgresql-12-main.log"
             ],
-            "commits": []
+            "commits": [
+              "956d0d2b353973809de9e576d3978adcc3229d55"
+            ]
           },
-          "content": "View dbs with \\l"
+          "content": "View dbs with \\l",
+          "solution": {
+            "commits": [
+              "62eab04dc1fd3f39045b88631b7633cb0250773a"
+            ]
+          }
         }
       ]
     }
