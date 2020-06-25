@@ -16,7 +16,7 @@
           "cd /etc/postgresql/12/main && sudo chmod 666 postgresql.conf && echo \"log_statement = 'all'\" >> postgresql.conf && echo \"log_min_error_statement = INFO\" >> postgresql.conf && echo \"log_min_messages = INFO\" >> postgresql.conf && sudo sed -i \"s/host    all             all             127.0.0.1\\/32            md5/host    all             all             127.0.0.1\\/32            trust/\" pg_hba.conf && cd /var/log/postgresql && sudo chmod 666 postgresql-12-main.log"
         ],
         "commits": [
-          "53bc0a39a0b2eb7ac98a763bd040b6fed8e815a3"
+          "dc5ad96aea3c388c6f82f98f15ecf4e6551836c6"
         ]
       },
       "directory": "coderoad"
@@ -43,20 +43,13 @@
           "id": "1.1",
           "setup": {
             "subtasks": false,
-            "commits": [
-              "a2770e46bee4543d568f3c633e4b25cc17e8053b"
-            ]
+            "commits": []
           },
           "content": "This is the test text. Create an `index.html` file to pass this lesson.",
           "hints": [
             "This is a hint to help people through the test",
             "Second hint for L1S1, don't worry if the hints don't show up yet"
-          ],
-          "solution": {
-            "commits": [
-              "725fe5adb146470e6ade6fac834d7334687aca21"
-            ]
-          }
+          ]
         }
       ]
     },
@@ -72,19 +65,12 @@
             "files": [
               "index.html"
             ],
-            "commits": [
-              "b0c927aec13b5bdddb252fd20e8efda3b095ea2f"
-            ]
+            "commits": []
           },
           "content": "Add the DOCTYPE",
           "hints": [
             "Add `<!DOCTYPE html>` at the top of `index.html` and save the file"
-          ],
-          "solution": {
-            "commits": [
-              "9399bb41e962b42ccc1734723349be8f506109f9"
-            ]
-          }
+          ]
         }
       ]
     },
@@ -100,16 +86,9 @@
             "watchers": [
               "../../../../var/log/postgresql/postgresql-12-main.log"
             ],
-            "commits": [
-              "47c49c91bee3ef96ed9d0276567bff4320b8c022"
-            ]
+            "commits": []
           },
-          "content": "View dbs with \\l",
-          "solution": {
-            "commits": [
-              "aa24f9e2a6c66bdacce2ddea7733e4a8e7aa7f16"
-            ]
-          }
+          "content": "View dbs with \\l"
         }
       ]
     }
