@@ -58,4 +58,4 @@ View dbs with \l
 
 #### HINTS
 
-* Add `<!DOCTYPE html>` at the top of `index.html` and save the file
+* Add `<!DOCTYPE html>` at the top of `index.html` and save the file - test
