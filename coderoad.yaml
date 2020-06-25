@@ -23,7 +23,6 @@ levels:
       - id: '10.1'
         setup:
           subtasks: false
-levels:
   - id: '15'
     steps:
       - id: '15.1'
