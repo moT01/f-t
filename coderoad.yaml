@@ -18,20 +18,20 @@ config:
     - name: node
       version: '>=10'
 levels:
-  - id: '1'
+  - id: '10'
     steps:
-      - id: '1.1'
+      - id: '10.1'
         setup:
           subtasks: false
-  - id: '2'
+  - id: '20'
     steps:
-      - id: '2.1'
+      - id: '20.1'
         setup:
           files: 
             - index.html
-  - id: '3'
+  - id: '30'
     steps:
-      - id: '3.1'
+      - id: '30.1'
         setup:
           watchers:
             - ../../../../var/log/postgresql/postgresql-12-main.log
